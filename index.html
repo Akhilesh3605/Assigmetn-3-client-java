@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Smoothie Machine</h1>
+    </header>
+    <main>
+        <form id="smoothieForm">
+            <label for="name">Customer Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <fieldset>
+                <legend>Pick Your Base:</legend>
+                <label><input type="radio" name="base" value="Milk" required> Milk</label>
+                <label><input type="radio" name="base" value="Almond Milk"> Almond Milk</label>
+                <label><input type="radio" name="base" value="Orange Juice"> Orange Juice</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose Your Fruits:</legend>
+                <label><input type="checkbox" name="fruit" value="Banana"> Banana</label>
+                <label><input type="checkbox" name="fruit" value="Strawberry"> Strawberry</label>
+                <label><input type="checkbox" name="fruit" value="Blueberry"> Blueberry</label>
+                <label><input type="checkbox" name="fruit" value="Mango"> Mango</label>
+            </fieldset>
+
+            <label for="size">Smoothie Size:</label>
+            <select id="size" name="size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <label for="extras">Extras:</label>
+            <select id="extras" name="extras" multiple>
+                <option value="Chia Seeds">Chia Seeds</option>
+                <option value="Protein Powder">Protein Powder</option>
+                <option value="Whipped Cream">Whipped Cream</option>
+            </select>
+
+            <button type="button" id="orderBtn">Order Smoothie</button>
+        </form>
+
+        <section id="smoothieOutput"></section>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
